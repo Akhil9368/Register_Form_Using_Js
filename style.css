@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@200&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins',sans-serif;
+}
+.hero{
+  height:100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url(code.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 10px 10%;
+  color: #fff;
+}
+.text{
+  position: relative;
+  top: 40%;
+ 
+}
+.text h2{
+  color: rgb(26, 217, 157);
+  font-weight: bold;
+  padding-top: 13px;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 3px;
+}
+.text h1{
+  position: relative;
+  font-size: 60px;
+  left: -4px;
+}
+
+img{
+      height: 420px;
+     
+    }
+
+form{
+  padding-top: 12px;
+  display: flex;
+ 
+  width: fit-content;
+  
+}
+form input{
+
+  outline: none;
+  padding: 10px 20px;
+  height: 50px;
+  width: 300px;
+  font-weight: bolder;
+  padding: 10px;
+  font-size: 19px;
+}
+
+form button{
+  background-color: #61b752;
+  height: 50px;
+  width: 60px;
+  outline: none;
+  border: none;
+ 
+
+}
+form img{
+  padding:9px;
+  height: 40px;
+  width: 40px;
+}
+input::-webkit-input-placeholder {
+  color: rgb(21, 219, 226);
+  font-weight: bolder;
+  padding: 10px;
+  font-size: 19px;
+}
+

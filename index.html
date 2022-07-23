@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+
+    <title>Coding Classes</title>
+</head>
+<body>
+   
+  <div class="hero">
+    
+    <div class="text">
+        <h1>Coming Soon !!</h1>
+        <h2> Our Brand New Website is On It's Way</h2>
+        <h3 class="exp"> Register YourSelf And For More Details </h3>
+        <form action="" name="submit-to-google-sheet">
+      
+        <input type="emal" name="Email" id="" placeholder="Enter Your email">
+        <button type ="submit" class="btn"><img src="icon.png" alt=""></button>
+        
+  </form>
+  <p id="success"></p>
+    
+    </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzLTGLDV_mwg_l4zUHWFcAkIFu7Gputa6L19omeG0CY_UiP0pA3FNij330fhUE_HVM-Tg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById('success');
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+              msg.innerHTML = "SuccessFully Registered";
+              setTimeout(function(){ msg.innerHTML = ""},5000)
+              form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+   
+  </div>
+ 
+   
+</body>
+</html>
